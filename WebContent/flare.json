@@ -1,0 +1,74 @@
+{
+    "name": "Force Balance",
+    "children": [{
+                "reason": "Only one dimension",
+                "name": "1 Dimensional",
+                "text": "Choose a coordinate system",
+                "image": "diagram.PNG",
+                "children": [{
+                      "reason": "right positive",
+                      "name": "right positive",
+                      "text": "keep a running total: Add the value of every right vector and subtract the value of every left vector",
+                      "image": "",
+                      "children": [{
+                          "reason": "solve the equation",
+                          "name": "solve the equation",
+                          "text": "set this total equal to zero and solve for the unknowns"
+                        }]
+                    },{
+                      "reason": "left positive",
+                      "name": "left positive",
+                      "text": "keep a running total: Add the value of every left vector and subtract the value of every right vector",
+                      "children": [{
+                          "reason": "solve the equation",
+                          "name": "solve the equation",
+                          "text": "set this total equal to zero and solve for the unknowns"
+                        }]
+                    }]
+              }, {
+                "reason": "forces have 2 components",
+                "name": "2 Dimensions",
+                "text": "Seperate x and y components",
+                "children": [{
+                              "reason":"calculate x components",
+                              "name":"x components",
+                              "text": "For each force vector: take the cosine of the angle between the force and the x axis and multiply this by the magnitude of the force",
+                              "image":"xComps.PNG",
+                              "children": [{
+                                   "reason": "Create equation for x components",
+                                   "name": "x equation",
+                                   "text": "total the x components that you calculated and set this equal to zero. Keep this equation, you will need it later",
+                                   "image":"xEquation.PNG",
+                                       "children": [{
+
+
+                                     "reason":"calculate y components",
+                                     "name":"y components",
+                                     "text": "For each force vector: take the sine of the angle between the force and the x axis and multiply this by the magnitude of the force",
+                                     "image": "yComps",
+                                     "children": [{
+                                         "reason": "Create equation for y components",
+                                         "name": "y components",
+                                         "text": "total the y components that you calculated and set this equal to zero. Keep this equation, you will need it later",
+                                         "image": "yEquation.PNG",
+                                         "children": [{
+                                             "reason":"solve x equation",
+                                             "name" : "solve x",
+                                             "text" : "Solve the x equation",
+                                             "image" : "solveX.PNG",
+                                              "children": [{
+                                                "reason":"solve y equation",
+                                                "name" : "solve y equation",
+                                                "text" : "Solve the x equation",
+                                                "image": "solveY.PNG"
+                                               }]
+                                         }]
+
+                           }]
+
+                  }]
+            }]
+
+      }]
+}]}
+
